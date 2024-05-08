@@ -117,6 +117,9 @@ const ProductDetails = ({ product, extraProducts }: ProductDetailsProp) => {
           <h3 className="font-semibold">Sucos</h3>
           <ProductList product={extraProducts} />
         </div>
+        <div className="mt-6">
+          <Button className="w-full font-semibold">Adicionar a sacola</Button>
+        </div>
       </div>
     </div>
   );
