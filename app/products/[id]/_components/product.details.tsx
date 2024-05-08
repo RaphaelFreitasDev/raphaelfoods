@@ -40,7 +40,7 @@ const ProductDetails = ({ product, extraProducts }: ProductDetailsProp) => {
   return (
     <div>
       <ProductImage product={product} />
-      <div className="p-5">
+      <div className=" relative z-50 mt-[-1.5rem] rounded-tl-3xl bg-white p-5">
         <div className="flex items-center gap-[0.375rem]">
           <div className="relative h-6 w-6">
             <Image
