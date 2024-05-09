@@ -17,11 +17,7 @@ const ProductList = ({ product }: ProductListPops) => {
   return (
     <div className="flex gap-3 overflow-x-scroll px-5 [&::-webkit-scrollbar]:hidden">
       {product.map((product) => (
-        <ProductItem
-          key={product.id}
-          product={product}
-          className="min-w-[150px]"
-        />
+        <ProductItem key={product.id} product={product} />
       ))}
     </div>
   );
