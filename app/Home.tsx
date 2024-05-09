@@ -9,7 +9,7 @@ import PromotionBanner from "./_components/promotion-banner";
 import RestaurantList from "./_components/resttaurant-list";
 import Link from "next/link";
 
-const Home = async () => {
+export const Home = async () => {
   const products = await db.product.findMany({
     where: {
       discountPercentage: {
@@ -48,10 +48,8 @@ const Home = async () => {
             className="h-fit p-0 text-primary hover:bg-transparent"
             asChild
           >
-            <Link href={"/products/recommended"}>
-              Ver todos
-              <ChevronRightIcon size={16} />
-            </Link>
+            <Link href={"/products/recommended"}>Ver todos</Link>
+            <ChevronRightIcon size={16} />
           </Button>
         </div>
 
@@ -71,10 +69,8 @@ const Home = async () => {
             className="h-fit p-0 text-primary hover:bg-transparent"
             asChild
           >
-            <Link href={"/restaurants/recommended"}>
-              Ver todos
-              <ChevronRightIcon size={16} />
-            </Link>
+            <Link href={"/restaurants/recommended"}>Ver todos</Link>
+            <ChevronRightIcon size={16} />
           </Button>
         </div>
         <RestaurantList />
@@ -82,5 +78,3 @@ const Home = async () => {
     </>
   );
 };
-
-export default Home;
