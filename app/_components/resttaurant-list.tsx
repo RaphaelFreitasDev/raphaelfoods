@@ -7,7 +7,11 @@ const RestaurantList = async () => {
   return (
     <div className="flex gap-3 overflow-x-scroll px-5 [&::-webkit-scrollbar]:hidden">
       {restaurants.map((restaurant) => (
-        <RestaurantItem key={restaurant.id} restaurant={restaurant} />
+        <RestaurantItem
+          key={restaurant.id}
+          restaurant={restaurant}
+          className="min-w-[266px]"
+        />
       ))}
     </div>
   );
