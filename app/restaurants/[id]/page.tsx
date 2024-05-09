@@ -42,7 +42,7 @@ const RestaurantPage = async ({ params: { id } }: RestaurantPageProps) => {
     <div>
       <RestaurantImage Restaurant={restaurant} />
       <div className=" z-60 relative mt-[-1.5rem] flex items-center justify-between rounded-tl-3xl rounded-tr-3xl bg-white  p-5">
-        <div className="flex items-center">
+        <div className="flex items-center gap-[0.135rem]">
           <div className="relative h-8 w-8">
             <Image
               src={restaurant.imageUrl}
